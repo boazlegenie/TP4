@@ -19,6 +19,13 @@ class Noeud:
     Classe représentant un noeud dans un arbre d'expression mathématique.
     """
     def __init__(self, valeur):
+
+        """
+        Initialise un noeud avec une valeur donnée.
+        Args:
+            valeur: La valeur du noeud, qui peut être une chaîne de caractères,
+            un entier ou un nombre flottant.
+        """
         # La valeur peut être de type str (variable/opération) ou int/float (constante)
         self.valeur = valeur
         # La liste des noeuds enfants est une liste d'objets de type Noeud
@@ -35,10 +42,9 @@ class Noeud:
             resultat += " " + enfant.afficher_polonais()
         return resultat
     
-    a=6
-    print(a)
+
     
-        
+
         
     
     
